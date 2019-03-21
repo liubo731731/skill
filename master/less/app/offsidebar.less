@@ -22,10 +22,9 @@
   border-left: 1px solid @offsidebar-border-color;
   background-color: @offsidebar-bg;
   color: @offsidebar-color;
-  z-index: @z-index-main-section + 5;
+  z-index: -1;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  .transition(all .3s ease);
   
   > nav {
     min-height: 100%;
@@ -71,6 +70,7 @@
 .offsidebar-open  {
   .offsidebar {
     overflow-y: auto;
+    z-index: @z-index-main-section + 5;
   }
   @media @tablet {
     overflow-y: auto;
@@ -78,10 +78,10 @@
 }
 
 // No tranformation devices
+.offsidebar {
+  right: -@offsidebar-wd;
+}
 .no-csstransforms3d {
-  .offsidebar {
-    right: -@offsidebar-wd;
-  }
   .offsidebar-open {
     .offsidebar {
       right: 0;
@@ -92,11 +92,14 @@
 /* Transformation ready devices*/
 .csstransforms3d {
   .offsidebar {
+    right: 0;
     .translate3d( (@offsidebar-wd), 0, 0);
+    .transition-transform(~".3s ease, z-index 0s linear .3s");
   }
   .offsidebar-open {
     .offsidebar {
       .translate3d(0, 0, 0);
+      .transition-transform(.3s ease);
     }
   }
 }

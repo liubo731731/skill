@@ -5,16 +5,6 @@
 @import (less, reference) "../../../vendor/fontawesome/css/font-awesome.min.css";
 
 
-[ng\:cloak], 
-[ng-cloak], 
-[data-ng-cloak], 
-[x-ng-cloak], 
-.ng-cloak, 
-.x-ng-cloak {
-  display: none !important;
-}
-
-
 //
 // Use this file to reset simple bootstrap styles
 // instead of modifying the core files
@@ -34,16 +24,12 @@ a {
   }
 }
 
-[ng-click], [data-ng-click] {
-  cursor: pointer
-}
-
 hr {
   border-top: 1px solid @gray-light;
 }
 
 // custom element
-now {
+[data-now] {
   display: inline-block;
 }
 
@@ -116,10 +102,6 @@ now {
   .nav-pills + & {
     border: 0;
     padding: 0;
-  }
-  // quick reset padding using tabset.p0
-  .p0 & {
-    padding: 0 !important;
   }
 }
 
@@ -285,13 +267,6 @@ fieldset {
       margin-left: -10px;
     }
   }
-}
-
-// Angular UI.Bootstrap
-.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
-
-.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus {
-  border-bottom: 0;
 }
 
 // allow font awesome to be placed instead of glyphicon in slider

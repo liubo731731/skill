@@ -2,6 +2,8 @@
      Component: bootstrap-reset
  ========================================================================== */
 
+// @import (reference) "../backend-angular/vendor/fontawesome/css/font-awesome.min.css"
+
 
 //
 // Use this file to reset simple bootstrap styles
@@ -15,7 +17,6 @@
 
 a {
   outline: none !important;
-  cursor: pointer;
   &.text-muted {
     &:hover, &:focus {
       color: darken($text-muted, 10%);
@@ -28,7 +29,7 @@ hr {
 }
 
 // custom element
-now {
+[data-now] {
   display: inline-block;
 }
 
@@ -269,12 +270,15 @@ fieldset {
   }
 }
 
-// Angular UI.Bootstrap
-.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+// allow font awesome to be placed instead of glyphicon in slider
+// .glyphicon:extend(.fa all) {
+//   &.glyphicon-chevron-right:extend(.fa-chevron-right all) {};
+//   &.glyphicon-chevron-left:extend(.fa-chevron-left all) {};
+//   &.glyphicon-chevron-up:extend(.fa-chevron-up all) {};
+//   &.glyphicon-chevron-down:extend(.fa-chevron-down all) {};
+//   &.glyphicon-folder-open:extend(.fa-folder-open all) {};
+// }
 
-.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus {
-  border-bottom: 0;
-}
 
 // fix modal backdrop to work with bootstrap ui
 // standard BS js uses a calculated height

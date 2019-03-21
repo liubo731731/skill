@@ -152,7 +152,7 @@ $tablet-landscape: 1025px;
       // submenu icons
       > em {
         display: inline-block;
-        width: 2em;
+        width: 1.8em;
         margin: 0 0 0 -2em;
       }
     }
@@ -216,7 +216,8 @@ $tablet-landscape: 1025px;
 } // @media @desktop
 
 // Collapsed state styles
-.aside-collapsed {
+.aside-collapsed,
+.aside-collapsed-text {
 
   .sidebar {
     overflow-x: hidden;
@@ -261,6 +262,28 @@ $tablet-landscape: 1025px;
     }
 
   } // .sidebar
-} // .aside-collapsed
+} // .aside-collapsed/text
 
+.aside-collapsed-text {
 
+  .sidebar {
+    > .nav {
+
+      > li > .nav-item > span,
+      > li > a > span {
+        display: block !important;
+        font-size: 12px;
+      }
+
+      > li {
+        width: $aside-wd-collapsed-text - 2;
+        > a {
+          padding: 14px 0;
+          > em {
+            font-size: 1.4em;
+          }
+        }
+      }
+    }
+  }
+}

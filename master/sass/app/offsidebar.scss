@@ -22,10 +22,9 @@ $offsidebar-wd:           $aside-wd + 15px;      // match the width with the mai
   border-left: 1px solid $offsidebar-border-color;
   background-color: $offsidebar-bg;
   color: $offsidebar-color;
-  z-index: $z-index-main-section + 5;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  @include transition(all .3s ease);
+  z-index: -1;
   
   > nav {
     min-height: 100%;
@@ -71,6 +70,7 @@ $offsidebar-wd:           $aside-wd + 15px;      // match the width with the mai
 .offsidebar-open  {
   .offsidebar {
     overflow-y: auto;
+    z-index: $z-index-main-section + 5;
   }
   @media only screen and (min-width: $mq-tablet) {
     overflow-y: auto;
@@ -78,10 +78,10 @@ $offsidebar-wd:           $aside-wd + 15px;      // match the width with the mai
 }
 
 // No tranformation devices
+.offsidebar {
+  right: -$offsidebar-wd;
+}
 .no-csstransforms3d {
-  .offsidebar {
-    right: -$offsidebar-wd;
-  }
   .offsidebar-open {
     .offsidebar {
       right: 0;
@@ -92,11 +92,14 @@ $offsidebar-wd:           $aside-wd + 15px;      // match the width with the mai
 /* Transformation ready devices*/
 .csstransforms3d {
   .offsidebar {
+    right: 0;
     @include translate3d( ($offsidebar-wd), 0, 0);
+    @include transition-transform(.3s ease, z-index 0s linear .3s);
   }
   .offsidebar-open {
     .offsidebar {
       @include translate3d(0, 0, 0);
+      @include transition-transform(.3s ease);
     }
   }
 }

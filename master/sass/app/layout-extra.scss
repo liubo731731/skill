@@ -236,6 +236,9 @@ $float-space: 15px;
     &.aside-collapsed .topnavbar .navbar-header {
       width: $aside-wd-collapsed + ($float-space * 2);
     }
+    &.aside-collapsed-text .topnavbar .navbar-header {
+      width: $aside-wd-collapsed-text + ($float-space * 2);
+    }
     &.layout-fs {
       .wrapper > section > .content-wrapper {
         padding: 0 0 0 20px;

@@ -76,7 +76,9 @@ body,
       background-image: none;
     }
   }
-  
+  .navbar-nav > li > .navbar-text {
+    color: $nav-top-item-mobile;
+  }
   .navbar-nav > li > a,
   .navbar-nav > .open > a {
     color: $nav-top-item-mobile;
@@ -119,7 +121,9 @@ body,
         box-shadow: 0 -3px 0 rgba(255,255,255,.5) inset;
       }
     }
-
+    .navbar-nav > li > .navbar-text {
+        color: $nav-top-item-desktop;
+    }
     .navbar-nav > li > a,
     .navbar-nav > .open > a {
       color: $nav-top-item-desktop;

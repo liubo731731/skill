@@ -138,7 +138,7 @@
 .text-gray          { color: $gray; }
 .text-gray-light    { color: $gray-light; }
 .text-gray-lighter  { color: $gray-lighter; }
-
+.text-inherit       { color: inherit; }
 // Text sizing
 
 .text-sm { font-size: $text-sm; }
@@ -180,6 +180,7 @@
 .bg-gray-light   { @include make-bg($gray-light, $text-color); }
 .bg-gray-lighter { @include make-bg($gray-lighter, $text-color); }
 
+.bg-transparent  { background-color: transparent !important; }
 
 .bg-cover {
   background-size: cover;

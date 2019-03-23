@@ -29,7 +29,7 @@
         .controller('TemplateController', TemplateController);
     TemplateController.$inject = ['$rootScope', '$scope'];
     function TemplateController($rootScope, $scope) {
-		markdownFromText(document.getElementById("template").innerText, "mdcontent");	
+		
 	}
 
 })();
@@ -89,14 +89,24 @@
 	          $urlRouterProvider.otherwise('/first');
 		      $stateProvider
 				.state('first', { //
-					url: '/first',
+					url: '/first/:mdName',
 					templateUrl: 'first.html',
-			   
+					controller: function($scope,$stateParams){
+						   jQuery.ajax({
+						    url: $stateParams.mdName+'.md',
+						    type: "GET",
+						    dataType: "text",
+						    success: function (data) {
+						        jQuery("#mdcontent").text(data);
+						        markdown("mdcontent");
+						    },
+							error: function (data) {
+							    alert();
+							}
+						});
+                          //markdownFromText(document.getElementById("mdcontent").innerText, "mdcontent");		
+					}
 			   })
-			   .state('404', { //单一视图
-					url: '/404',
-					templateUrl: '404.html',
-				})
 				.state('template', {//模板不要动
 					url: '/template',
 					templateUrl: 'template.html',

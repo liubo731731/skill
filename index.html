@@ -16,19 +16,29 @@
 	<link rel="stylesheet" href="assets/css/amazeui.min.css" />
     <link rel="stylesheet" href="assets/css/amazeui.datatables.min.css" />
     <link rel="stylesheet" href="assets/css/app.css">
+	<link rel="stylesheet" href="assets/css/markdown.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.22/angular-ui-router.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/app.js"></script>
 
 </head>
-	<body data-type="widgets">
-	    <script src="assets/js/theme.js"></script>
+	<body data-type="widgets" class="theme-white">
 	    <div class="am-g tpl-g">
              <div ng-include="'header.html'"></div>
 			<div ng-include="'sidebar.html'"></div>
-     
-    <div ui-view autoscroll='false'></div>
+     <div class="tpl-content-wrapper">
+     	<div class="row-content am-cf">
+     		<div class="widget am-cf">
+     			<div class="widget-body">
+     				<div class="tpl-page-state">
+                       <div ui-view autoscroll='false'></div>
+     				</div>
+     			</div>
+     		</div>
+     	</div>
+     </div>
+    
 	    </div>
 	    </div>
 		</body>

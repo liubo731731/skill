@@ -1,5 +1,7 @@
-<div id="aa"></div>
-<xmp theme="united" style="display: none;">
+<div id="mdcontent" ng-controller="TemplateController">
+
+</div>
+<xmp theme="united" id="template" style="display: none;">
 # Markdown text goes in here
 
 ## Chapter 1
@@ -14,15 +16,3 @@ aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 culpa qui officia deserunt mollit anim id est laborum.
 </xmp>
-<script src="assets/js/strapdown.js"></script>
-<script>
-	
-var converter = new showdown.Converter(),
-    text      = '# hello, markdown!',
-    html      = converter.makeHtml(text);
-		document.getElementById("aa").innerHTML=html;
-	
-	
-	
-	
-</script>

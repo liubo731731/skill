@@ -3,7 +3,8 @@
     angular
         .module('php', [
             'app.sidebar',
-			'app.routes'
+			'app.routes',
+			'app.web'
         ]);
 })();
 (function () {
@@ -14,9 +15,24 @@
 (function () {
     'use strict';
     angular
+        .module('app.web', []);
+})();
+(function () {
+    'use strict';
+    angular
         .module('app.routes', ['ui.router']);
 })();
+(function () {
+    'use strict';
+    angular
+        .module('app.web')
+        .controller('TemplateController', TemplateController);
+    TemplateController.$inject = ['$rootScope', '$scope'];
+    function TemplateController($rootScope, $scope) {
+		markdownFromText(document.getElementById("template").innerText, "mdcontent");	
+	}
 
+})();
 (function () {
     'use strict';
     angular
@@ -72,7 +88,7 @@
 		      $locationProvider.html5Mode(false);
 	          $urlRouterProvider.otherwise('/form');
 		      $stateProvider
-				.state('form', { //单一视图
+				.state('form', { //
 					url: '/form',
 					templateUrl: 'form.html',
 			   
@@ -80,7 +96,11 @@
 			   .state('404', { //单一视图
 					url: '/404',
 					templateUrl: '404.html',
-				})     
+				})
+				.state('template', {//模板不要动
+					url: '/template',
+					templateUrl: 'template.html',
+				})    
 	};
 })()
 

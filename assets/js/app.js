@@ -86,31 +86,24 @@
 		function  routeConfig($stateProvider, $urlRouterProvider,$locationProvider) {
         $locationProvider.hashPrefix('');
 		      $locationProvider.html5Mode(false);
-	          $urlRouterProvider.otherwise('/first');
+	          $urlRouterProvider.otherwise('/first/readme');
 		      $stateProvider
 				.state('first', { //
 					url: '/first/:mdName',
 					templateUrl: 'first.html',
 					controller: function($scope,$stateParams){
 						   jQuery.ajax({
-						    url: $stateParams.mdName+'.md',
+						    url: './md/'+$stateParams.mdName+'.md',
 						    type: "GET",
 						    dataType: "text",
 						    success: function (data) {
 						        jQuery("#mdcontent").text(data);
 						        markdown("mdcontent");
-						    },
-							error: function (data) {
-							    alert();
-							}
+						    }
 						});
                           //markdownFromText(document.getElementById("mdcontent").innerText, "mdcontent");		
 					}
 			   })
-				.state('template', {//模板不要动
-					url: '/template',
-					templateUrl: 'template.html',
-				})    
 	};
 })()
 

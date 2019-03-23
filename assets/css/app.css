@@ -1,9 +1,3 @@
-ul,
-li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 header {
   z-index: 1200;
   position: relative;
@@ -1068,9 +1062,9 @@ ul.tpl-dropdown-content .tpl-dropdown-menu-messages-item .menu-messages-content 
 }
 .theme-white .widget {
   padding: 10px 20px 13px;
-  background-color: #fff;
+/*  background-color: #fff; */
   border-radius: 4px;
-  color: #838FA1;
+ /* color: #838FA1; */
 }
 .theme-white .widget-title {
   font-size: 16px;

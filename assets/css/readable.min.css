@@ -831,7 +831,7 @@ h3{font-size:1.5em;}
 small{font-size:13px;}
 blockquote{border-left:6px solid #cdcdcd;}blockquote.pull-right{border-right:6px solid #cdcdcd;}
 blockquote p{font-size:1em;line-height:1.2em;}
-code,pre{-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;background-color:#ffffff;}
+code,pre{-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}
 .muted,.help-block,.uneditable-input,blockquote,small{color:#999999;}
 .page-header{border-bottom:2px solid #cdcdcd;}
 .navbar .brand{font-weight:bold;line-height:1em;padding:15px 15px 7px;}.navbar .brand:hover{color:#c50001;}

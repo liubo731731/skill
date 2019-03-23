@@ -86,11 +86,11 @@
 		function  routeConfig($stateProvider, $urlRouterProvider,$locationProvider) {
         $locationProvider.hashPrefix('');
 		      $locationProvider.html5Mode(false);
-	          $urlRouterProvider.otherwise('/form');
+	          $urlRouterProvider.otherwise('/first');
 		      $stateProvider
-				.state('form', { //
-					url: '/form',
-					templateUrl: 'form.html',
+				.state('first', { //
+					url: '/first',
+					templateUrl: 'first.html',
 			   
 			   })
 			   .state('404', { //单一视图

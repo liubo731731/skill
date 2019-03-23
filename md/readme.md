@@ -1,4 +1,5 @@
 # strapdownify
+---
 ## 导读
 1. 如何手动调用`strapdown.js`的渲染方法
 2. html下如何将markdown 转换为html

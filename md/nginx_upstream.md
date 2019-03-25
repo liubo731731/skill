@@ -35,15 +35,16 @@ b:直接使用su - root来切换到root用户，然后使用 service
 c:使用su root切换到root用户，并同时使用/sbin/service来操作,/sbin/service iptables stop
  
 4.  nginx.conf配置文件如下  
+5.  
 ```
-#user  nobody;
+user  nobody;
 worker_processes  1;
 
-#error_log  logs/error.log;
-#error_log  logs/error.log  notic/sbine;
-#error_log  logs/error.log  info;
+error_log  logs/error.log;
+error_log  logs/error.log  notic/sbine;
+error_log  logs/error.log  info;
 
-#pid        logs/nginx.pid;
+pid        logs/nginx.pid;
 
 events {
     worker_connections  1024;
@@ -63,6 +64,7 @@ stream {
     }
 
 }
+
 ```
 
 5.  进入/usr/local/nginx 启动nginx:./nginx

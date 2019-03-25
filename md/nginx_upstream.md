@@ -29,6 +29,7 @@ make && make install
 [root@localhost ~]#chkconfig iptables off    //永久关闭防火墙
 ```
 注:如果提示service not found,下面三种方式解决
+
 ```
 1:yum install initscripts -y
 2:直接使用su - root来切换到root用户，然后使用 service 
@@ -68,4 +69,5 @@ stream {
 
 }
 ```
+
 5. 进入/usr/local/nginx 启动nginx:./nginx

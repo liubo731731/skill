@@ -73,3 +73,8 @@ stream {
 &emsp;&emsp;&emsp;netstat -lnp|grep xxx   xxx请换为你的nginx需要的端口，如：80,会提示进程多少如:1777  
 &emsp;&emsp;&emsp;ps 1777 可以看到是哪个路径  
 &emsp;&emsp;&emsp;kill -9 1777 //杀掉编号为1777的进程
+
+7.nginx启动报错
+&nbsp;&nbsp;/usr/local/nginx/logs/nginx.pid  路径下找不到nginx.pid  
+&nbsp;&nbsp;解决方法   
+&nbsp;&nbsp;执行一下/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf

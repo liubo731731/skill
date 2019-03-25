@@ -23,19 +23,17 @@ cd nginx-1.12.1
 ./configure --prefix=/usr/local/nginx --with-stream
 make && make install
 ```
-参考:https://www.cnblogs.com/chenjianxiang/p/8489055.html
+参考:https://www.cnblogs.com/chenjianxiang/p/8489055.html  
 
-3.  打开防火墙需要允许访问的端口，如端口80，或者直接关闭防火墙
-
+3.  打开防火墙需要允许访问的端口，如端口80，或者直接关闭防火墙  
 ```
 [root@localhost ~]#servcie iptables stop     //临时关闭防火墙
 [root@localhost ~]#chkconfig iptables off    //永久关闭防火墙
 ```
 注:如果提示service not found,下面三种方式解决
-1:yum install initscripts -y
-2:直接使用su - root来切换到root用户，然后使用 service 
-3:使用su root切换到root用户，并同时使用/sbin/service来操作，
- /sbin/service iptables stop
+yum install initscripts -y  
+直接使用su - root来切换到root用户，然后使用 service   
+使用su root切换到root用户，并同时使用/sbin/service来操作,/sbin/service iptables stop
  
 4.  nginx.conf配置文件如下
 

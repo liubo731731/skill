@@ -2,4 +2,6 @@
 
 回头一看，瞬间懵逼,于是决定用github搭建自己的博客  
 
-框架介绍:利用angularjs路由和markdown进行快速记录
+框架介绍:利用angularjs路由和markdown进行快速记录  
+
+也许百年之后留下的就是这几篇网站了

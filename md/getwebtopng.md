@@ -15,5 +15,5 @@ chrome浏览器商店里也有许多截图增强扩展，但在截取一些比�
 4. 如果你想准确截取网页的某一部分，可以按下 ⌘Command + ⇧Shift + C（Windows 为 Ctrl + Shift + C）嗅探元素。选中想要的部分后，再运行 Capture node      screenshot 命令，一张完美的选区截图就诞生了。
 
 
-###问题
+### 问题
 1.  在我自己的win7笔记本上正常,但是在我的服务器window server2012上面截图只能截到大概2/3位置

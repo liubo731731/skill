@@ -93,7 +93,7 @@
 					templateUrl: 'first.html',
 					controller: function($scope,$stateParams){
 						   jQuery.ajax({
-						    url: './md/'+$stateParams.mdName+'.md?t='+new Date().getTime(),
+						    url: './md/'+$stateParams.mdName+'.md?t='+(new Date().getTime()/60000),
 						    type: "GET",
 						    dataType: "text",
 						    success: function (data) {

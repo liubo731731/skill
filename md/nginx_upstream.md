@@ -14,7 +14,6 @@ yum -y install openssl*
 ```
 
 2.  下载nginx-1.12.1.tar.gz，放在 /usr/local/ 目录下
-
 ```
 cd /usr/local/
 wget http://nginx.org/download/nginx-1.12.1.tar.gz

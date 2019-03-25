@@ -75,5 +75,6 @@ stream {
 &emsp;&emsp;&emsp;kill -9 1777 //杀掉编号为1777的进程
 
 7.nginx启动报错  
+
 &emsp;&emsp;&emsp;/usr/local/nginx/logs/nginx.pid  路径下找不到nginx.pid   
 &emsp;&emsp;&emsp;执行:/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf

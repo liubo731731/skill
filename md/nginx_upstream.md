@@ -35,7 +35,6 @@ yum install initscripts -y
 使用su root切换到root用户，并同时使用/sbin/service来操作,/sbin/service iptables stop
  
 4.  nginx.conf配置文件如下
-
 ```
 #user  nobody;
 worker_processes  1;

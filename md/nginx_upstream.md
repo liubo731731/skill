@@ -29,7 +29,7 @@ make && make install
 [root@localhost ~]#servcie iptables stop     //临时关闭防火墙
 [root@localhost ~]#chkconfig iptables off    //永久关闭防火墙
 ```
-注:如果提示service not found,下面三种方式解决
+注:如果提示service not found,下面三种方式解决  
 yum install initscripts -y  
 直接使用su - root来切换到root用户，然后使用 service   
 使用su root切换到root用户，并同时使用/sbin/service来操作,/sbin/service iptables stop

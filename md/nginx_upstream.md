@@ -35,7 +35,6 @@ b:直接使用su - root来切换到root用户，然后使用 service
 c:使用su root切换到root用户，并同时使用/sbin/service来操作,/sbin/service iptables stop
  
 4.  nginx.conf配置文件如下  
-5.  
 ```
 user  nobody;
 worker_processes  1;
@@ -52,7 +51,7 @@ events {
 
 stream {
     upstream upstream_8002 {
-        server us-free.hyss.xyz:48528;     # ip:port
+        server us-free.hyss.xyz:48528;  
     }
 
     server {

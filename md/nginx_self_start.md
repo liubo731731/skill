@@ -1,4 +1,9 @@
-#### nginx开机自启动
+#### nginx开机自启动(亲测有效centos版本:6.10)  
+1.    cat /etc/issue 查看版本
+2.    cat /etc/redhat-release
+3.    cat /proc/version
+4.    uname -a 显示如下
+5.    uname -r
 
 nginx相关配置  
 ```

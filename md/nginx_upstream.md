@@ -34,11 +34,10 @@ make && make install
 注:如果提示service not found,下面三种方式解决
 
 ```
-1:yum install initscripts -y
-2:直接使用su - root来切换到root用户，然后使用 service 
-3:使用su root切换到root用户，并同时使用/sbin/service来操作，
+a:yum install initscripts -y
+b:直接使用su - root来切换到root用户，然后使用 service 
+c:使用su root切换到root用户，并同时使用/sbin/service来操作，
 /sbin/service iptables stop
-
 ```
 
 4.  nginx.conf配置文件如下

@@ -6,13 +6,15 @@
 nginx版本：1.12.1  
 安装方式：源码编译安装  
 
-1. 安装必须环境,nginx的编译需要c++，同时prce（重定向支持）和openssl（https支持）也需要安装。
+1.  安装必须环境,nginx的编译需要c++，同时prce（重定向支持）和openssl（https支持）也需要安装。
 ```
 yum install gcc-c++
 yum -y install pcre*
 yum -y install openssl*
 ```
-2. 下载nginx-1.12.1.tar.gz，放在 /usr/local/ 目录下  
+
+2.  下载nginx-1.12.1.tar.gz，放在 /usr/local/ 目录下
+
 ```
 cd /usr/local/
 wget http://nginx.org/download/nginx-1.12.1.tar.gz
@@ -23,7 +25,8 @@ make && make install
 ```
 参考:https://www.cnblogs.com/chenjianxiang/p/8489055.html
 
-3. 打开防火墙需要允许访问的端口，如端口80，或者直接关闭防火墙
+3.  打开防火墙需要允许访问的端口，如端口80，或者直接关闭防火墙
+
 ```
 [root@localhost ~]#servcie iptables stop     //临时关闭防火墙
 [root@localhost ~]#chkconfig iptables off    //永久关闭防火墙
@@ -38,7 +41,7 @@ make && make install
 
 ```
 
-4. nginx.conf配置文件如下
+4.  nginx.conf配置文件如下
 
 ```
 #user  nobody;

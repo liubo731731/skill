@@ -65,4 +65,9 @@ stream {
 
 ```
 
-5.进入/usr/local/nginx 启动nginx:./nginx
+5.进入/usr/local/nginx 启动nginx:./nginx  
+6.如果端口被占用  
+	查找端口占用
+	netstat -lnp|grep xxx   xxx请换为你的nginx需要的端口，如：80,会提示进程多少如:1777  
+	ps 1777 可以看到是哪个路径  
+	kill -9 1777 //杀掉编号为1777的进程

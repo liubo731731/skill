@@ -38,6 +38,7 @@ make && make install
 ```
 
 4. nginx.conf配置文件如下
+
 ```
 #user  nobody;
 worker_processes  1;

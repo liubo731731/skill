@@ -7,6 +7,7 @@ chrome浏览器商店里也有许多截图增强扩展，但在截取一些比�
 1. 首先按下 ⌘Command + ⌥Option + I（Windows 为 F12）快捷键，召唤出调试界面。
 
 <img src="./img/capturepng/1.png"  height="" width="50%">
+
 2. 按下 ⌘Command + ⇧Shift + P（Windows 为 Ctrl + Shift + P），输入命令 Capture full size screenshot（只输前几个字母就能找到,
 
 <img src="./img/capturepng/2.png"  height="" width="50%">

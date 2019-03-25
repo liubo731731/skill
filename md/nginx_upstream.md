@@ -23,7 +23,7 @@ make && make install
 ```
 参考:https://www.cnblogs.com/chenjianxiang/p/8489055.html
 
-3.打开防火墙需要允许访问的端口，如端口80，或者直接关闭防火墙
+3. 打开防火墙需要允许访问的端口，如端口80，或者直接关闭防火墙
 ```
 [root@localhost ~]#servcie iptables stop     //临时关闭防火墙
 [root@localhost ~]#chkconfig iptables off    //永久关闭防火墙

@@ -9,4 +9,8 @@
 ### 记录一些适实用网站
 1.  有些网站邀请码用恶心的化学式，可以在这个网站进行制作&nbsp;https://www.chem960.com/structure/  
 2.  Cloud Studio 云端IDE开发php,node,java等程序&nbsp;https://studio.coding.net/?/home  
-3.  未完待续...
+3.  谷歌云端硬盘,免费提供15G永久空间;
+4.  坚果云,免费提供1G空间,月3G流量
+5.  百度网盘替代方案，支持外链免登陆下载,特别好:蓝奏云
+6.  谷歌搜索,一家推荐站:&nbsp;http://387099.blogspot.com/2018/03/ssssr.html
+7.  未完待续...

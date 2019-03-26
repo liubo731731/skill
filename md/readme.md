@@ -14,6 +14,7 @@
 5.  蓝奏云,支持外链免登陆下载,挺好:
 6.  谷歌搜索手段(需那啥才能打开),&nbsp;http://387099.blogspot.com/2018/03/ssssr.html
 7.  两家国内服务器站:  
-    https://www.uovz.com/cart.php  http://www.ssf.cc
+    https://www.uovz.com/cart.php  
+	http://www.ssf.cc
 8.  未完待续...  
 9.  

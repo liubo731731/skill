@@ -1,7 +1,7 @@
 ### echarts容器动态设置高度
 
 
-<img src="./img/echarts/1.png"  width="50%">
+<img src="./img/echarts/1.png"  width="50%" height="200px">
 
 ```
 // getDom() 获取 ECharts 实例容器的 dom 节点

@@ -92,8 +92,9 @@
 					url: '/first/:mdName',
 					templateUrl: 'first.html',
 					controller: function($scope,$stateParams){
+						
 						   jQuery.ajax({
-						    url: './md/'+$stateParams.mdName+'.md?t='+(new Date().getTime()/60000),
+						    url: './md/'+$stateParams.mdName.replace(/./g, '/')+'.md?t='+(new Date().getTime()/60000),
 						    type: "GET",
 						    dataType: "text",
 						    success: function (data) {

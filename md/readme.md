@@ -16,5 +16,5 @@
 7.  两家国内服务器站:  
     https://www.uovz.com/cart.php  
 	http://www.ssf.cc
-8.  未完待续...  
+8.  韩国搜索引擎:naver
 9.  

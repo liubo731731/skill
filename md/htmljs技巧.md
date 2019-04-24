@@ -6,3 +6,9 @@
 var input = document.getElementById("your-input-id");
 input.blur();
 ```
+* vue input输入框绑定value写法
+
+```
+<input :value="(new Date(item.departureTime).format('yyyy-MM-dd hh:mm'))" readonly="readonly" type="text">
+
+```

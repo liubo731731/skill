@@ -12,3 +12,19 @@ input.blur();
 <input :value="(new Date(item.departureTime).format('yyyy-MM-dd hh:mm'))" readonly="readonly" type="text">
 
 ```
+* 手动触发input -之前直接改变input value vue 模型不更新
+
+```
+_self.dispatchEvent(new Event('input'));
+
+
+
+网上帖子
+<input type="text" tip="手机号码" v-model="mobile" id="mobile" onkeyup="this.value=this.value.replace(/\D/g,'')" onclick="popupKey(this)" name="outerPrepareProposerModel[0].mobile" maxlength="20" class="am-input-sm">
+
+如下即可实现数据的绑定
+
+$(targetInput).val(value);
+ //触发一下该input的input事件
+  $(targetInput)[0].dispatchEvent(new Event('input'));
+```

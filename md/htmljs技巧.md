@@ -12,3 +12,6 @@ input.blur();
 <input :value="(new Date(item.departureTime).format('yyyy-MM-dd hh:mm'))" readonly="readonly" type="text">
 
 ```
+
+* !0=true，所以当值允许0时候,不允许为空需要排除!0
+* 

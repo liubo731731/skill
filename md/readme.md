@@ -17,8 +17,8 @@
     https://www.uovz.com/cart.php  
 	http://www.ssf.cc
 8.  韩国最大搜索引擎:naver
-9.  赌球网站:https://www.bet365.com/
-10:推荐3个图片压缩神器，让你今后图片压缩不再求人
+9.  赌球网站:https://www.bet365.com/  
+10. 推荐3个图片压缩神器，让你今后图片压缩不再求人
 * TinyPNG https://tinypng.com/
 * Jpeg.io https://www.jpeg.io/
 *  Imagify https://imagify.io/optimizer/

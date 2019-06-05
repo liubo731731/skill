@@ -22,3 +22,4 @@
 * TinyPNG https://tinypng.com/
 * Jpeg.io https://www.jpeg.io/
 *  Imagify https://imagify.io/optimizer/
+11. 免费申请证书的网站freessl.cn

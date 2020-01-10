@@ -78,3 +78,30 @@ stream {
 
 &emsp;&emsp;&emsp;/usr/local/nginx/logs/nginx.pid  路径下找不到nginx.pid   
 &emsp;&emsp;&emsp;执行:/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+
+
+
+8:centos7 设置开机启动
+vim /etc/rc.d/rc.local
+
+增加内容
+
+/usr/local/nginx/sbin/nginx -c /nginx/nginx-1.15.10/conf/nginx.conf
+
+注意 -c 之后的 文件..  需要确定.
+
+9:centos7关闭防火墙
+1、firewalld的基本使用
+
+启动： systemctl start firewalld
+
+关闭： systemctl stop firewalld
+
+查看状态： systemctl status firewalld 
+
+开机禁用  ： systemctl disable firewalld
+
+开机启用  ： systemctl enable firewalld
+————————————————
+版权声明：本文为CSDN博主「無法複制」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/zxz547388910/article/details/90632912
